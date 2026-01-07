@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eaf6e1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 18px;
+    background: #5fa98d;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+  }
+  .header p{
+    font-size: 18px;
+  }
+  
+  .content {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .form-section {
+    flex: 1;
+  }
+  
+  .form-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 14px;
+  }
+  
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF8F;
+  }
+  
+  button {
+    background: #4caf75;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #3c9e7d;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  
+  
+  .image-section img {
+    width: 100%;
+    max-width: 350px;
+  }
+  .team-section {
+    padding: 60px 40px;
+    background: #5fa98d;
+  }
+  
+  .team-section h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+  
+  /* Grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 30px;
+
+  }
+  
+  /* Card */
+  .team-card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  }
+  
+  /* Avatar */
+  .team-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 20px;
+
+  }
+  
+  /* Text */
+  .team-card h2 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+  }
+  
+  .team-card span {
+    color: #5fa98d;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .team-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 15px;
+  }
+  .btn{
+    display: inline-block;
+    background-color: #2e8669;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 17px;
+    box-shadow: 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+
+  }
+.btn:hover{
+    margin-top: 5px;
+    transform: translateY(-8px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.portfoilioheader{
+    background-color: #2e8669;
+    text-align: center;
+    display: flex;
+
+}
+.portfolio-section
+{
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+.portfoilio-grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 30px;
+
+}
+.portfoilio-card{
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
