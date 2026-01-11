@@ -34,7 +34,9 @@
             text-decoration: none;
             color: #2d3e2d;
             font-size: 16px;
+           
         }
+
 
         * {
             margin: 0;
@@ -43,8 +45,8 @@
         }
 
         body {
-            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #eaf6e1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:#c9b8a8;
             min-height: 100vh;
             padding: 20px;
         }
@@ -53,15 +55,13 @@
             text-align: center;
             padding: 40px 20px;
             margin-bottom: 40px;
-            background: #5fa98d;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
         .portfolioheader h1 {
             font-size: 3.5rem;
             color: white;
             letter-spacing: 2px;
+        
             animation: fadeInDown 1s ease;
         }
 
@@ -83,7 +83,7 @@
 
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns:1fr 1fr;
             gap: 30px;
             padding: 20px;
         }
@@ -92,7 +92,7 @@
             background: white;
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeInUp 1s ease;
         }
@@ -110,7 +110,7 @@
 
         .portfolio-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .img-atharva {
@@ -120,16 +120,16 @@
             object-fit: cover;
             display: block;
             margin: 0 auto 25px;
-            border: 5px solid #5fa98d;
+            border: 5px solid #000000;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         .portfolio-card h2 {
-            color: #2e8669;
+            color: #000000;
             font-size: 1.8rem;
             margin-bottom: 25px;
             text-align: center;
-            border-bottom: 3px solid #5fa98d;
+            border-bottom: 3px solid #000000;
             padding-bottom: 15px;
         }
 
@@ -138,25 +138,25 @@
         }
 
         .portfolio-card li {
-            background: #eaf6e1;
+            background-color: #c9b8a8;
             padding: 15px 20px;
             margin: 12px 0;
             border-radius: 10px;
             font-size: 1.1rem;
             color: #333;
             transition: all 0.3s ease;
-            border-left: 4px solid #5fa98d;
+            border-left: 4px solid #000000;
         }
 
         .portfolio-card li:hover {
             transform: translateX(10px);
-            background: #5fa98d;
+            background-color: #333;
             color: white;
-            border-left-color: #3c9e7d;
+            
         }
 
         .portfolio-card li strong {
-            color: #2e8669;
+            color: #000000;
             font-weight: 600;
         }
 
@@ -164,32 +164,6 @@
             color: white;
         }
 
-        @media (max-width: 768px) {
-            header {
-                padding: 15px 20px;
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            nav {
-                gap: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .portfolioheader h1 {
-                font-size: 2.5rem;
-            }
-
-            .portfolio-grid {
-                grid-template-columns: 1fr;
-                padding: 10px;
-            }
-
-            .portfolio-card {
-                padding: 30px 20px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -203,7 +177,6 @@
             <a href="index.html">About Us</a>
         </nav>
     </header>
-
     <section class="portfolioheader">
         <h1>Portfolio</h1>
     </section>
@@ -212,10 +185,10 @@
         <div class="portfolio-grid">
             <div class="portfolio-card">
                 <img src="img/download (1).jpeg" alt="Atharva Lal Shrestha" class="img-atharva">
-                <h2>Atharva Lal Shrestha</h2>
+                <h2>Arjav Lal Joshi</h2>
                 <ul>
                     <li><strong>Age:</strong> 18</li>
-                    <li><strong>Address:</strong> Bagbazar</li>
+                    <li><strong>Address:</strong> Bhaisepati</li>
                     <li><strong>Course:</strong> AI</li>
                 </ul>
             </div>
@@ -224,7 +197,7 @@
                 <h2>Education</h2>
                 <ul>
                     <li><strong>School:</strong> Rosebud</li>
-                    <li><strong>College:</strong> Deerwalk</li>
+                    <li><strong>College:</strong> Gems</li>
                     <li><strong>University:</strong> London Met</li>
                 </ul>
             </div>

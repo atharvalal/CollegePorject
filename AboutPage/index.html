@@ -1,20 +1,61 @@
 <html>
+  <style>
+     header {
+            background-color: #f5f3f0;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+    /* Logo styling */
+    .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3d5a45;
+            border: 2px solid #3d5a45;
+            padding: 10px 20px;
+        }
+
+        /* Navigation menu container */
+        nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        /* Navigation links */
+        nav a {
+            text-decoration: none;
+            color: #2d3e2d;
+            font-size: 16px;
+        }
+  </style>
   <link rel="stylesheet" href="css/style.css">
   <body>
-  <section class="header">
+    <header>
+      <div class="logo">ECO-MART</div>
+      <nav>
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#blog">Blog</a>
+          <a href="#research">Research</a>
+          <a href="index.html">About Us</a>
+      </nav>
+  </header>
+  <section class="Title">
     <h1>About Us</h1>
-    <p>We’d love to hear from you</p>
+    <p>We'd love to hear from you</p>
   </section>
 
   <section class="content">
     <div class="form-section">
       <h2>Get in Touch</h2>
 
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Email Address">
-      <textarea placeholder="Your Message"></textarea>
+      <input type="text" placeholder="Your Name" id="name">
+      <input type="email" placeholder="Email Address" id="email">
+      <textarea placeholder="Your Message" id="message"></textarea>
 
-      <button>Send Message</button>
+      <button onclick="submitFeedback()">Send Message</button>
     </div>
 
     <div class="image-section">
@@ -31,7 +72,7 @@
         <h2 >Atharva Lal Shrestha</h2>
         <span>Front-End Developer</span>
         <p>
-          I’m a student learning HTML, CSS, and JavaScript, passionate about
+          I'm a student learning HTML, CSS, and JavaScript, passionate about
           building clean and functional web interfaces.
         </p>
       <a href="Atharva.html" class="btn">See more</a>
@@ -39,13 +80,13 @@
   
       <div class="team-card">
         <img src="img/download.jpeg" alt="Arjab">
-        <h2>Arjab Lal Joshi</h2>
+        <h2>Arjav Lal Joshi</h2>
         <span>Front-End Developer</span>
         <p>
           I enjoy creating simple, responsive web pages and experimenting
           with modern UI designs.
         </p>
-        <a href="Atharva.html" class="btn">See more</a>
+        <a href="Arjav.html" class="btn">See more</a>
       </div>
         
       <div class="team-card">
@@ -53,7 +94,7 @@
         <h2>Shirish Birkram Shah</h2>
         <span>Documentation</span>
         <p>
-          I’m a student learning HTML, CSS, and JavaScript, passionate about
+          I'm a student learning HTML, CSS, and JavaScript, passionate about
           building clean and functional web interfaces.
         </p>
         <a href="Atharva.html" class="btn">See more</a>
@@ -63,13 +104,33 @@
         <h2>Aniska Shrestha</h2>
         <span>Front-end Developer</span>
         <p>
-          I’m a student learning HTML, CSS, and JavaScript, passionate about
+          I'm a student learning HTML, CSS, and JavaScript, passionate about
           building clean and functional web interfaces.
         </p>
-        <a href="Atharva.html" class="btn">See more</a>
+        <a href="aniska_portfolio.html" class="btn">See more</a>
       </div>
   
     </div>
   </section>
+
+  <script>
+    function submitFeedback() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Check if all fields are filled
+      if (name && email && message) {
+        alert('Feedback submitted successfully! Thank you for contacting us.');
+        
+        // Optional: Clear the form after submission
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+      } else {
+        alert('Please fill in all fields before submitting.');
+      }
+    }
+  </script>
 </body>
 </html>

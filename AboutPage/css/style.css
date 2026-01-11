@@ -5,7 +5,7 @@ body {
     padding: 0;
   }
   
-  .header {
+  .Title {
     text-align: center;
     padding: 18px;
     background: #5fa98d;
@@ -13,7 +13,7 @@ body {
     border: 2px solid white;
     border-radius: 50px;
   }
-  .header p{
+  .Title p{
     font-size: 18px;
   }
   
