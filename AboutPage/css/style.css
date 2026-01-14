@@ -130,20 +130,32 @@ button:hover {
 
 /* Grid */
 .team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
 
 }
 
 /* Card */
 .team-card {
-  background: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 15px 35px rgba(0, 0, 0, 0.1);
+  min-width: 400px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+
 }
 
 .team-card:hover {
@@ -153,6 +165,7 @@ button:hover {
 
 
 .team-card img {
+  align-self: center;
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -173,71 +186,68 @@ button:hover {
 }
 
 .team-card p {
+  text-align: left;
   font-size: 14px;
   color: #555;
   line-height: 1.6;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .btn {
-  display: inline-block;
+  text-align: center;
+  max-width: 100px;
+  margin-top: auto;
   background-color: #2e8669;
   color: white;
   padding: 10px;
   text-decoration: none;
   border-radius: 17px;
-  box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
 .btn:hover {
-  margin-top: 5px;
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .portfolioheader {
   text-align: center;
-  padding: 40px 20px;
-  margin-bottom: 40px;
-  background: #5fa98d;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #3c9e7d;
+  border: none;
+  border-radius: 15px;
+  padding: 60px 20px;
+  color: white;
 }
 
 .portfolioheader h1 {
-  font-size: 3.5rem;
-  color: white;
-  letter-spacing: 2px;
-  animation: fadeInDown 1s ease;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Portfolio Section */
 .portfolio-section {
   max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
 }
 
 .portfolio-card {
+  flex: 1;
+  min-width: 300px;
   background: white;
   border-radius: 20px;
   padding: 40px;
@@ -263,58 +273,46 @@ button:hover {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.img-atharva {
+.img-portfolio {
   width: 150px;
   height: 150px;
+  border: none;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto 25px;
-  border: 5px solid #5fa98d;
+  margin: 0 auto 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio-card h2 {
-  color: #2e8669;
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
-  border-bottom: 3px solid #5fa98d;
-  padding-bottom: 15px;
 }
 
 .portfolio-card ul {
   list-style: none;
+  padding: 0;
 }
 
-.portfolio-card li {
-  background: #eaf6e1;
-  padding: 15px 20px;
-  margin: 12px 0;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  color: #333;
-  transition: all 0.3s ease;
-  border-left: 4px solid #5fa98d;
+.portfolio-card ul li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  line-height: 1.6;
 }
 
-.portfolio-card li:hover {
-  transform: translateX(10px);
-  background: #5fa98d;
-  color: white;
-  border-left-color: #3c9e7d;
+.portfolio-card ul li:last-child {
+  border-bottom: none;
 }
 
-.portfolio-card li strong {
+.portfolio-card ul li strong {
   color: #2e8669;
   font-weight: 600;
 }
 
-.portfolio-card li:hover strong {
-  color: white;
-}
 
-/* Media Query for Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
 
   /* 1. Header & Navigation */
