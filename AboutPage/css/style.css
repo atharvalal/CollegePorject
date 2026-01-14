@@ -90,10 +90,11 @@ textarea:focus {
 }
 
 button {
-  background: #4caf75;
+  width: 100%;
+  background: #2e8669;
   color: white;
   border: none;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   cursor: pointer;
   font-size: 19px;
