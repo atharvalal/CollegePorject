@@ -1,187 +1,387 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #eaf6e1;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .Title {
-    text-align: center;
-    padding: 18px;
-    background: #5fa98d;
-    color: white;
-    border: 2px solid white;
-    border-radius: 50px;
-  }
-  .Title p{
-    font-size: 18px;
-  }
-  
-  .content {
-    max-width: 1000px;
-    margin: 40px auto;
-    background: white;
-    border-radius: 20px;
-    display: flex;
-    gap: 40px;
-    padding: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  }
-  
-  .form-section {
-    flex: 1;
-  }
-  
-  .form-section h2 {
-    margin-bottom: 20px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    border: 2px solid #ddd;
-    font-size: 14px;
-  }
-  
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: #4CAF8F;
-  }
-  
-  button {
-    background: #4caf75;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background: #3c9e7d;
-  }
-  
-  .image-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  
-  
-  .image-section img {
-    width: 100%;
-    max-width: 350px;
-  }
-  .team-section {
-    padding: 60px 40px;
-    background: #5fa98d;
-  }
-  
-  .team-section h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 42px;
-    margin-bottom: 50px;
-  }
-  
-  /* Grid */
-  .team-grid {
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap: 30px;
+  font-family: 'Poppins', sans-serif;
+  background: #eaf6e1;
+  margin: 0;
+  padding: 0;
+}
 
+.Title {
+  text-align: center;
+  padding: 18px;
+  background: #5fa98d;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.Title p {
+  font-size: 18px;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3d5a45;
+  border: 2px solid #3d5a45;
+  padding: 10px 20px;
+}
+
+/* Navigation menu container */
+nav {
+  display: flex;
+  gap: 35px;
+}
+
+/* Navigation links */
+nav a {
+  text-decoration: none;
+  color: #2d3e2d;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #eaf6e1;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.content {
+  max-width: max-content;
+  margin: 60px auto;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  gap: 40px;
+  padding: 80px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4CAF8F;
+}
+
+button {
+  background: #4caf75;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+button:hover {
+  background: #3c9e7d;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.team-section {
+  padding: 60px 40px;
+  background: #5fa98d;
+}
+
+.team-section h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+
+}
+
+/* Card */
+.team-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 20px;
+
+}
+
+.team-card h2 {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.team-card span {
+  color: #5fa98d;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #2e8669;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 17px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.btn:hover {
+  margin-top: 5px;
+  transform: translateY(-8px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioheader {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  background: #5fa98d;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.portfolioheader h1 {
+  font-size: 3.5rem;
+  color: white;
+  letter-spacing: 2px;
+  animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
   }
-  
-  /* Card */
-  .team-card {
-    background: white;
-    padding: 30px;
-    border-radius: 18px;
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.img-atharva {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 25px;
+  border: 5px solid #5fa98d;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-card h2 {
+  color: #2e8669;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 3px solid #5fa98d;
+  padding-bottom: 15px;
+}
+
+.portfolio-card ul {
+  list-style: none;
+}
+
+.portfolio-card li {
+  background: #eaf6e1;
+  padding: 15px 20px;
+  margin: 12px 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  transition: all 0.3s ease;
+  border-left: 4px solid #5fa98d;
+}
+
+.portfolio-card li:hover {
+  transform: translateX(10px);
+  background: #5fa98d;
+  color: white;
+  border-left-color: #3c9e7d;
+}
+
+.portfolio-card li strong {
+  color: #2e8669;
+  font-weight: 600;
+}
+
+.portfolio-card li:hover strong {
+  color: white;
+}
+
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+  /* 1. Header & Navigation */
+  header {
+    flex-direction: column;
     text-align: center;
-    box-shadow: 15px 35px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    gap: 20px;
   }
-  
-  .team-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
-  
-  /* Avatar */
-  .team-card img {
+
+  /* 2. Portfolio Hero Section */
+  .portfolioheader h1 {
+    font-size: 2.2rem;
+    /* Scaled down for mobile */
+  }
+
+  /* 3. Grid Layouts (Team, Portfolio, Experience) */
+  .portfolio-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+    /* Force single column */
+    padding: 10px;
+    gap: 20px;
+  }
+
+  /* 4. Contact Form Section */
+  .content {
+    flex-direction: column;
+    /* Stacks form on top of image */
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .image-section {
+    order: -1;
+    /* Moves the illustration above the form */
+    margin-bottom: 30px;
+  }
+
+  .image-section img {
+    max-width: 250px;
+    /* Smaller illustration for mobile */
+  }
+
+  /* 5. Portfolio & Team Cards */
+  .portfolio-card,
+  .team-card {
+    padding: 25px 15px;
+  }
+
+  .portfolio-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-card li {
+    font-size: 0.95rem;
+    /* Better fit for smaller screens */
+    padding: 12px;
+  }
+
+  .img-atharva {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
-    object-fit: contain;
-    margin-bottom: 20px;
-
   }
-  
-  /* Text */
-  .team-card h2 {
-    margin: 10px 0 5px;
-    font-size: 20px;
-  }
-  
-  .team-card span {
-    color: #5fa98d;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .team-card p {
-    font-size: 14px;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 15px;
-  }
-  .btn{
-    display: inline-block;
-    background-color: #2e8669;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 17px;
-    box-shadow: 5px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease , box-shadow 0.3s ease;
-
-  }
-.btn:hover{
-    margin-top: 5px;
-    transform: translateY(-8px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
-.portfoilioheader{
-    background-color: #2e8669;
-    text-align: center;
-    display: flex;
-
-}
-.portfolio-section
-{
-    text-align: center;
-    color: #fff;
-    font-size: 42px;
-    margin-bottom: 50px;
-    background-color: white;
-}
-.portfoilio-grid{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    gap: 30px;
-
-}
-.portfoilio-card{
-    background: white;
-    padding: 30px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 15px 35px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }

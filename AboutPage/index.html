@@ -1,46 +1,52 @@
 <html>
-  <style>
-     header {
-            background-color: #f5f3f0;
-            padding: 20px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  About Page
+</title>
+<style>
+  header {
+    background-color: #f5f3f0;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    /* Logo styling */
-    .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #3d5a45;
-            border: 2px solid #3d5a45;
-            padding: 10px 20px;
-        }
+  /*Logo styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3d5a45;
+    border: 2px solid #3d5a45;
+    padding: 10px 20px;
+  }
 
-        /* Navigation menu container */
-        nav {
-            display: flex;
-            gap: 35px;
-        }
+  /* Navigation menu container */
+  nav {
+    display: flex;
+    gap: 35px;
+  }
 
-        /* Navigation links */
-        nav a {
-            text-decoration: none;
-            color: #2d3e2d;
-            font-size: 16px;
-        }
-  </style>
-  <link rel="stylesheet" href="css/style.css">
-  <body>
-    <header>
-      <div class="logo">ECO-MART</div>
-      <nav>
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#blog">Blog</a>
-          <a href="#research">Research</a>
-          <a href="index.html">About Us</a>
-      </nav>
+  /* Navigation links */
+  nav a {
+    text-decoration: none;
+    color: #2d3e2d;
+    font-size: 16px;
+  }
+</style>
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+  <header>
+    <div class="logo">ECO-MART</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#blog">Blog</a>
+      <a href="#research">Research</a>
+      <a href="index.html">About Us</a>
+    </nav>
   </header>
   <section class="Title">
     <h1>About Us</h1>
@@ -64,40 +70,43 @@
   </section>
   <section class="team-section">
     <h1>Our Team</h1>
-  
+
     <div class="team-grid">
-  
+
       <div class="team-card">
         <img src="img/download (1).jpeg" alt="Atharva">
-        <h2 >Atharva Lal Shrestha</h2>
+        <h2>Atharva Lal Shrestha</h2>
         <span>Front-End Developer</span>
         <p>
-          I'm a student learning HTML, CSS, and JavaScript, passionate about
-          building clean and functional web interfaces.
+          Computing student specializing in Artificial Intelligence and Full-Stack Development, with a growing skill set
+          in building intelligent, scalable, and user-focused applications. Passionate about continuous learning,
+          problem-solving, and applying AI in modern software development.
         </p>
-      <a href="Atharva.html" class="btn">See more</a>
+        <a href="Atharva.html" class="btn">See more</a>
       </div>
-  
+
       <div class="team-card">
         <img src="img/download.jpeg" alt="Arjab">
         <h2>Arjav Lal Joshi</h2>
         <span>Front-End Developer</span>
         <p>
-          I enjoy creating simple, responsive web pages and experimenting
-          with modern UI designs.
+          Focused on building a career in AI and robotics by developing high-impact, practical skills.
         </p>
         <a href="Arjav.html" class="btn">See more</a>
       </div>
-        
+
       <div class="team-card">
-        <img src="img/sishir.jpeg" alt="sishir">
+        <img src="img/shirish.jpeg" alt="sishir">
         <h2>Shirish Birkram Shah</h2>
         <span>Documentation</span>
         <p>
-          I'm a student learning HTML, CSS, and JavaScript, passionate about
-          building clean and functional web interfaces.
+          Motivated undergraduate student pursuing Artificial Intelligence with strong communication, organizational,
+          and
+          teamwork skills. Eager to gain hands-on experience and contribute effectively to professional environments
+          while
+          continuing academic and personal growth.
         </p>
-        <a href="Atharva.html" class="btn">See more</a>
+        <a href="Shirsh_portfolio.html" class="btn">See more</a>
       </div>
       <div class="team-card">
         <img src="img/Aniska.jpeg" alt="aniska">
@@ -109,7 +118,7 @@
         </p>
         <a href="aniska_portfolio.html" class="btn">See more</a>
       </div>
-  
+
     </div>
   </section>
 
@@ -122,7 +131,7 @@
       // Check if all fields are filled
       if (name && email && message) {
         alert('Feedback submitted successfully! Thank you for contacting us.');
-        
+
         // Optional: Clear the form after submission
         document.getElementById('name').value = '';
         document.getElementById('email').value = '';
@@ -133,4 +142,5 @@
     }
   </script>
 </body>
+
 </html>

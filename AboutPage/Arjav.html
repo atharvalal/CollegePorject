@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atharva's Portfolio</title>
+    <title>Arjav's Portfolio</title>
     <style>
         /* Header container with logo and navigation */
         header {
@@ -13,159 +15,9 @@
             justify-content: space-between;
             align-items: center;
         }
-
-        /* Logo styling */
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #3d5a45;
-            border: 2px solid #3d5a45;
-            padding: 10px 20px;
-        }
-
-        /* Navigation menu container */
-        nav {
-            display: flex;
-            gap: 35px;
-        }
-
-        /* Navigation links */
-        nav a {
-            text-decoration: none;
-            color: #2d3e2d;
-            font-size: 16px;
-           
-        }
-
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color:#c9b8a8;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        .portfolioheader {
-            text-align: center;
-            padding: 40px 20px;
-            margin-bottom: 40px;
-        }
-
-        .portfolioheader h1 {
-            font-size: 3.5rem;
-            color: white;
-            letter-spacing: 2px;
-        
-            animation: fadeInDown 1s ease;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .portfolio-section {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns:1fr 1fr;
-            gap: 30px;
-            padding: 20px;
-        }
-
-        .portfolio-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 10px 30px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 1s ease;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .portfolio-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .img-atharva {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto 25px;
-            border: 5px solid #000000;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .portfolio-card h2 {
-            color: #000000;
-            font-size: 1.8rem;
-            margin-bottom: 25px;
-            text-align: center;
-            border-bottom: 3px solid #000000;
-            padding-bottom: 15px;
-        }
-
-        .portfolio-card ul {
-            list-style: none;
-        }
-
-        .portfolio-card li {
-            background-color: #c9b8a8;
-            padding: 15px 20px;
-            margin: 12px 0;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            color: #333;
-            transition: all 0.3s ease;
-            border-left: 4px solid #000000;
-        }
-
-        .portfolio-card li:hover {
-            transform: translateX(10px);
-            background-color: #333;
-            color: white;
-            
-        }
-
-        .portfolio-card li strong {
-            color: #000000;
-            font-weight: 600;
-        }
-
-        .portfolio-card li:hover strong {
-            color: white;
-        }
-
     </style>
 </head>
+
 <body>
     <header>
         <div class="logo">ECO-MART</div>
@@ -188,20 +40,40 @@
                 <h2>Arjav Lal Joshi</h2>
                 <ul>
                     <li><strong>Age:</strong> 18</li>
-                    <li><strong>Address:</strong> Bhaisepati</li>
+                    <li><strong>Address:</strong> Bhainsepati, Lalitpur</li>
                     <li><strong>Course:</strong> AI</li>
+                    <li><strong>Phone:</strong> 9812222776</li>
                 </ul>
             </div>
 
             <div class="portfolio-card">
                 <h2>Education</h2>
                 <ul>
-                    <li><strong>School:</strong> Rosebud</li>
-                    <li><strong>College:</strong> Gems</li>
+                    <li><strong>School:</strong> 2013-2019 Modern Indian School <br>
+                        2019-2023 GEMS School</li>
+                    <li><strong>College:</strong> GEMS Institute of Higher Education</li>
                     <li><strong>University:</strong> London Met</li>
+                </ul>
+            </div>
+            <div class="portfolio-card">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Teamwork: </strong>Team Coordination</li>
+                    <li><strong>Technial Skills:</strong> GEMS Institute of Higher Education</li>
+                    <li><strong>Interests :</strong> AI, Robotics, Programming</li> 
+                </ul>
+            </div>
+            <div class="portfolio-card">
+                <h2>Languages</h2>
+                <ul>
+                    <li><strong>Nepali: </strong>Native</li>
+                    <li><strong>English: </strong>Fluent</li>
+                    <li><strong>Hindi: </strong>Basic</li>
+
                 </ul>
             </div>
         </div>
     </section>
 </body>
+
 </html>
