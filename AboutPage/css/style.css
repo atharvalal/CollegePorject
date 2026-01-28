@@ -8,10 +8,10 @@ body {
 .Title {
   text-align: center;
   padding: 18px;
-  background: #5fa98d;
+  background: #2e8669;
   color: white;
   border: 2px solid white;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .Title p {
@@ -118,8 +118,11 @@ button:hover {
 }
 
 .team-section {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   padding: 60px 40px;
-  background: #5fa98d;
+  background: #2e8669;
 }
 
 .team-section h1 {

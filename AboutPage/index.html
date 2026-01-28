@@ -61,7 +61,7 @@
       <input type="email" placeholder="Email Address" id="email">
       <textarea placeholder="Your Message" id="message"></textarea>
 
-      <button onclick="submitFeedback()">Send Message</button>
+      <button class="submit-button">Send Message</button>
     </div>
 
     <div class="image-section">
@@ -82,7 +82,7 @@
           in building intelligent, scalable, and user-focused applications. Passionate about continuous learning,
           problem-solving, and applying AI in modern software development.
         </p>
-        <a href="Atharva.html" class="btn">See more</a>
+        <a href="Portfolio/Atharva.html" class="btn">See more</a>
       </div>
 
       <div class="team-card">
@@ -92,13 +92,13 @@
         <p>
           Focused on building a career in AI and robotics by developing high-impact, practical skills.
         </p>
-        <a href="Arjav.html" class="btn">See more</a>
+        <a href="Portfolio/Arjav.html" class="btn">See more</a>
       </div>
 
       <div class="team-card">
         <img src="img/shirish.jpeg" alt="sishir">
         <h2>Shirish Birkram Shah</h2>
-        <span>Documentation</span>
+        <span>Documentation, Front-end Developer</span>
         <p>
           Motivated undergraduate student pursuing Artificial Intelligence with strong communication, organizational,
           and
@@ -106,7 +106,7 @@
           while
           continuing academic and personal growth.
         </p>
-        <a href="Shirsh_portfolio.html" class="btn">See more</a>
+        <a href="Portfolio/Shirsh_portfolio.html" class="btn">See more</a>
       </div>
       <div class="team-card">
         <img src="img/Aniska.jpeg" alt="aniska">
@@ -116,30 +116,67 @@
           I'm a student learning HTML, CSS, and JavaScript, passionate about
           building clean and functional web interfaces.
         </p>
-        <a href="aniska_portfolio.html" class="btn">See more</a>
+        <a href="Portfolio/aniska_portfolio.html" class="btn">See more</a>
       </div>
 
     </div>
   </section>
 
   <script>
-    function submitFeedback() {
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      // Check if all fields are filled
-      if (name && email && message) {
-        alert('Feedback submitted successfully! Thank you for contacting us.');
-
-        // Optional: Clear the form after submission
-        document.getElementById('name').value = '';
-        document.getElementById('email').value = '';
-        document.getElementById('message').value = '';
-      } else {
-        alert('Please fill in all fields before submitting.');
+    const submitbtn = document.querySelector('.submit-button')
+    submitbtn.addEventListener('click', () => {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      // Validate name
+      if (!name) {
+        alert('Please enter your name.');
+        return;
       }
-    }
+
+      if (name.length < 2) {
+        alert('Name must be at least 2 characters long.');
+        return;
+      }
+
+      // Validate email
+      if (!email) {
+        alert('Please enter your email address.');
+        return;
+      }
+
+      if (!email.includes('a')) {
+        email.style.borderColor = 'red'
+      }
+      if (!email.includes('.')) {
+        alert('Invalid Email')
+        return
+      }
+      // Validate message
+      if (!message) {
+        alert('Please enter your message.');
+        return;
+      }
+
+      if (message.length < 10) {
+        alert('Message must be at least 10 characters long.');
+        return;
+      }
+
+      if (message.length > 1000) {
+        alert('Message must not exceed 1000 characters.');
+        return;
+      }
+
+      // If all validation passes
+      alert('Feedback submitted successfully! Thank you for contacting us.');
+
+      // Clear the form after successful submission
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+
+    })
   </script>
 </body>
 
